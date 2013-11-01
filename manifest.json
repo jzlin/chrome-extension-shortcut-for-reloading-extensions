@@ -1,0 +1,38 @@
+{
+  "name" : "shortcut for reloading extensions",
+  "version" : "1.0.0",
+  "manifest_version": 2,
+  "description" : "shortcut for reloading extensions",
+  "background" : {
+    "scripts" : [
+      "background.js",
+      "commandsListener.js"
+    ],
+    "persistent" : false
+  },
+  "commands" : {
+    "reload_extension" : {
+      "suggested_key" : {
+        "default" : "Ctrl+Shift+Q",
+        "windows" : "Ctrl+Shift+Q",
+        "mac" : "MacCtrl+Shift+Q",
+        "chromeos" : "Ctrl+Shift+Q",
+        "linux" : "Ctrl+Shift+Q"
+      },
+      "description" : "shortcut for reloading extensions"
+    }
+  },
+  "browser_action" :
+  {
+    "default_icon" : {
+      "19" : "reload_128.png",
+      "38" : "reload_128.png"
+    },
+    "default_title" : "reload extension"
+  },
+  "icons" : {
+    "16" : "reload_128.png",
+    "48" : "reload_128.png",
+    "128" : "reload_128.png"
+  }
+}
